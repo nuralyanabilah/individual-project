@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3d6c2e3;
+            color: #000000;
+            animation: fadeIn 1s ease-in;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #ddab8cd8;
+            margin: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: fadeInDown 1s ease-in;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #755248;
+        }
+
+        main {
+            padding: 30px;
+            animation: fadeIn 2s;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #cd9673bc;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease-in;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            font-family: 'Great Vibes', cursive;
+            animation: fadeInUp 1.5s ease-in;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .about-content .caption {
+            width: 60%;
+            text-align: center;
+            color: rgb(51, 40, 26);
+            animation: fadeInUp 2s ease-in;
+            margin-bottom: 2rem;
+        }
+
+        .about-content .collage {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
+            width: 60%;
+        }
+
+        .about-content .collage img {
+            width: 100%;
+            height: 15cm;
+            display:block;
+            border-radius: 10px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        .about-content .collage .caption {
+            text-align: justify;
+            text-decoration-color: black;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="hobby.html">Hobbies</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>About Me</h1>
+            <p>Hi! I am Nur Alya Nabilah Binti Norhafizal</p>
+        </section>
+        <section class="content about-content">
+            <div class="caption">
+                <h2>I would like to share a sneak peek of my life</h2>
+                <p>"I am profoundly grateful for the love and support of my cherished family, whose warmth and kindness are my constant source of strength. My best friend, an extraordinary soul, stands by me through every triumph and challenge, embodying loyalty and compassion. Additionally, my delightful cat adds a touch of whimsy and endless joy to my days, completing the beautiful tapestry of my life."</p>
+            </div>
+            <div class="collage">
+                <div>
+                    <img src="image/family.jpg" alt="About Me Photo 1">
+                    <div class="caption">This is my lovely family </div>
+                </div>
+                <div>
+                    <img src="image/cat.jpg" alt="About Me Photo 2">
+                    <div class="caption">This is my cuties cat</div>
+                </div>
+                <div>
+                    <img src="image/bestfriend.jpg" alt="About Me Photo 3">
+                    <div class="caption">This is my bestfriend since my highschool day</div>
+                </div>
+                <div>
+                    <img src="image/uitmbestfriend.jpg" alt="About Me Photo 4">
+                    <div class="caption">This is my bestfriend in my University</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3d6c2e3; /* Maintaining the existing background color */
+            color: #000000;
+            animation: fadeIn 1s ease-in;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #ddab8cd8;
+            margin: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #755248;
+        }
+
+        main {
+            padding: 30px;
+            animation: fadeIn 2s;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: #cd9673bc; 
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            font-family: 'Great Vibes', cursive;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 0.5rem 0 0;
+        }
+
+        .hobbies-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .hobby-item {
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        .hobby-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hobby-item .caption {
+            padding: 10px;
+            background-color: #ddab8cd8; 
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Hobbies</h1>
+            <p>Here are some of the things I love to do in my free time.</p>
+        </section>
+        <section class="hobbies-content">
+            <div class="hobby-item">
+                <img src="image/makeup.jpg" alt="Reading">
+                <div class="caption">Makeup</div>
+            </div>
+            <div class="hobby-item">
+                <img src="image/travel.jpg" alt="Traveling">
+                <div class="caption">Traveling</div>
+            </div>
+            <div class="hobby-item">
+                <img src="image/food.jpg" alt="Cooking">
+                <div class="caption">Food Hunting</div>
+            </div>
+            <div class="hobby-item">
+                <img src="image/photo.jpg" alt="Photography">
+                <div class="caption">Photography</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
